@@ -64,6 +64,10 @@
 			color: #d79d3b;
 		}
 
+		a:not(.Button):hover {
+			text-decoration: none;
+		}
+
 		.App {
 			min-height: 100%;
 			display: flex;
@@ -94,6 +98,11 @@
 			overflow: hidden;
 			z-index: 1;
 			box-shadow: 0 0 50px rgba(0,0,0,0.6);
+			transition: 0.1s ease-in-out;
+		}
+
+		.Button:hover {
+			background-color: #e7b45b;
 		}
 
 		.Avatar {
