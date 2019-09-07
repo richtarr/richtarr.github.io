@@ -1,1 +1,174 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>RichJT - Web Designer / Web Developer in the UK</title>
+	<meta name="description" content="I am an award-winning website developer in the UK, with years of experience working on high performant sites for brands of all sizes. Contact me today to get started on your new project!">
+	<link href="https://fonts.googleapis.com/css?family=Catamaran:800|Quicksand:600&display=swap" rel="stylesheet">
+	<style>
+		*, *:before, *:after {
+			box-sizing: inherit;
+		}
+
+		html {
+			box-sizing: border-box;
+			background-color: #1c1c1c;
+			background-image: radial-gradient(circle at 50% 64%, #2b2b2b, #000);
+			color: #f6f6f6;
+			line-height: 1.5;
+			letter-spacing: 0.07em;
+			height: 100%;
+		}
+
+		body {
+			margin: 0;
+			height: 100%;
+			font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+						"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+						sans-serif;
+			font-weight: 500;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+		code {
+			font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+		}
+
+		h1, h2, h3 {
+			letter-spacing: 0.02em;
+			font-family: 'Catamaran', sans-serif;
+			font-weight: 800;
+		}
+
+		h1 {
+			width: 100%;
+			margin: 0;
+			font-size: 60px;
+		}
+
+		h2 {
+			margin: 0 auto 1.5rem;
+		}
+
+		p {
+			margin: 0 0 1rem;
+			font-size: 16px;
+			line-height: 1.8;
+		}
+
+		a:not(.Button) {
+			color: #d79d3b;
+		}
+
+		.App {
+			min-height: 100%;
+			display: flex;
+			padding: 3rem 1.5rem;
+			flex-wrap: wrap;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.App__inner {
+			margin: auto;
+			max-width: 700px;
+			text-align: center;
+		}
+
+		.Button {
+			display: inline-block;
+			padding: 0.75rem 1.5rem;
+			background-color: #d79d3b;
+			color: #fff;
+			font-size: 20px;
+			font-weight: 800;
+			text-decoration: none;
+			font-family: 'Catamaran', sans-serif;
+			border-radius: 9999px;
+			position: relative;
+			overflow: hidden;
+			z-index: 1;
+			box-shadow: 0 0 50px rgba(0,0,0,0.6);
+		}
+
+		.Avatar {
+			width: 100px;
+			height: 100px;
+			border-radius: 9999px;
+			overflow: hidden;
+			margin: 0 auto 1.5rem;
+			box-shadow: 0 0 50px rgba(0,0,0,0.6);
+		}
+
+		.Avatar__img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.Footer {
+			text-align: center;
+			margin-top: 1.5rem;
+		}
+
+		.Footer__text {
+			font-size: 0.8rem;
+		}
+
+		.text-gold {
+			color: #d79d3b;
+		}
+
+		.text-bold {
+			font-weight: bold;
+		}
+
+		.mb-0 {
+			margin-bottom: 0;
+		}
+
+		.mb-4 {
+			margin-bottom: 2rem;
+		}
+
+		@media all and (min-width: 800px) {
+			.App__inner {
+				display: flex;
+			}
+			.Avatar {
+				flex-shrink: 0;
+			}
+			.Content {
+				text-align: left;
+				padding-left: 3rem;
+			}
+			.Footer {
+				width: 100%;
+				margin-bottom: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="App">
+		<div class="App__inner">
+			<div class="Avatar">
+				<img src="img/profile.jpg" alt="Rich Tarr" class="Avatar__img">
+			</div>
+			<div class="Content">
+				<p class="text-gold text-bold mb-0">Hello! My name is</p>
+				<h1>Rich Tarr</h1>
+				<p class="mb-4">I build websites for companies and people. With years of experience leading a development team for a national, award-winning digital agency, I specialise in building high performance websites for businesses and&nbsp;people.</p>
+				<a class="Button" target="_blank" href="mailto:richjtarr@gmail.com">Contact me about your next project!</a>
+			</div><!-- /.Content -->
+		</div>
+		<div class="Footer">
+			<p class="Footer__text mb-0">&copy;2019 RichJT | <a target="_blank" href="mailto:richjtarr@gmail.com">richjtarr@gmail.com</a></p>
+		</div><!-- /.Footer -->
+	</div>
+</body>
+</html>
