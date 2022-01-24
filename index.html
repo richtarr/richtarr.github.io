@@ -70,11 +70,11 @@
 			line-height: 1.8;
 		}
 
-		a:not(.Button) {
+		a:not([class]) {
 			color: #d79d3b;
 		}
 
-		a:not(.Button):hover {
+		a:not([class]):hover {
 			text-decoration: none;
 		}
 
@@ -130,6 +130,26 @@
 			object-fit: cover;
 		}
 
+		.Content__social-link {
+			color: #fff;
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: 0.1s ease-in-out;
+		}
+
+		.Content__social-link:hover {
+			color: #e7b45b;
+		}
+
+		.Content__social-icon {
+			width: 1.2rem;
+			height: 1.2rem;
+			fill: currentColor;
+			margin-right: 0.5rem;
+		}
+
 		.Footer {
 			text-align: center;
 			margin-top: 1.5rem;
@@ -166,6 +186,9 @@
 				text-align: left;
 				padding-left: 3rem;
 			}
+			.Content__social-link {
+				justify-content: flex-start;
+			}
 			.Footer {
 				width: 100%;
 				margin-bottom: 0;
@@ -183,6 +206,12 @@
 				<p class="text-gold text-bold mb-0">Hello! My name is</p>
 				<h1>Rich Tarr</h1>
 				<p class="mb-4">I create websites in Chester and across the UK. With years of experience leading a development team for a national, award-winning digital agency, I specialise in building high performance websites for businesses and&nbsp;people.</p>
+				<p class="mb-4">
+					<a href="https://www.linkedin.com/in/richard-tarr-a31b4a38/" class="Content__social-link">
+						<svg class="Content__social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.91 32"><title>social_linkedin</title><path d="M30.7,0H1.3A1.32,1.32,0,0,0,0,1.3V30.6A1.35,1.35,0,0,0,1.3,32H30.6a1.32,1.32,0,0,0,1.3-1.3V1.3A1.18,1.18,0,0,0,30.7,0ZM9.5,27.3H4.7V12H9.5ZM7.1,9.9A2.8,2.8,0,1,1,9.9,7.1,2.8,2.8,0,0,1,7.1,9.9ZM27.3,27.3H22.6V19.9c0-1.8,0-4-2.5-4s-2.8,1.9-2.8,3.9v7.6H12.6V12H17v2.1h.1a5,5,0,0,1,4.5-2.5c4.8,0,5.7,3.2,5.7,7.3Z"/></svg>
+						Connect on LinkedIn
+					</a>
+				</p><!-- /.mb-4 -->
 				<a class="Button" target="_blank" href="mailto:hi@richjt.co.uk">Contact me about your next project!</a>
 			</div><!-- /.Content -->
 		</div>
